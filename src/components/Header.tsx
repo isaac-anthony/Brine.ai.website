@@ -30,18 +30,21 @@ export const Header = () => {
               />
             </div>
             <span className="text-xl font-bold tracking-tighter text-foreground">
-              Brine<span className="text-primary">.ai</span>
+              Brine Ai <span className="text-primary">Consulting</span>
             </span>
           </Link>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
-            <Link href="/#services" className="hover:text-primary transition-colors">Services</Link>
-            <Link href="/pricing" className="hover:text-primary transition-colors">Pricing</Link>
-            <Link href="/#architecture" className="hover:text-primary transition-colors">Architecture</Link>
+            <Link href="#about-us" className="hover:text-primary transition-colors">About Us</Link>
+            <Link href="#the-architecture" className="hover:text-primary transition-colors">The Architecture</Link>
+            <Link href="#our-agents" className="hover:text-primary transition-colors">Our Agents</Link>
           </div>
 
           <div className="flex items-center gap-4">
-            <motion.button
+            <motion.a
+              href="https://calendly.com/brineaiconsulting/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ 
                 scale: 1.05,
                 boxShadow: "0px 0px 20px rgba(0, 113, 227, 0.3)"
@@ -52,7 +55,7 @@ export const Header = () => {
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
               <span className="relative">Book a call</span>
               <LucideArrowUpRight className="w-4 h-4 relative group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </motion.button>
+            </motion.a>
             
             <button 
               onClick={() => setIsOpen(!isOpen)}
@@ -72,12 +75,17 @@ export const Header = () => {
             exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
             className="fixed inset-0 z-[90] bg-white/80 md:hidden flex flex-col items-center justify-center gap-8"
           >
-            <Link href="/#services" onClick={() => setIsOpen(false)} className="text-4xl font-bold text-muted hover:text-foreground transition-colors">Services</Link>
-            <Link href="/pricing" onClick={() => setIsOpen(false)} className="text-4xl font-bold text-muted hover:text-foreground transition-colors">Pricing</Link>
-            <Link href="/#architecture" onClick={() => setIsOpen(false)} className="text-4xl font-bold text-muted hover:text-foreground transition-colors">Architecture</Link>
-            <button className="mt-8 bg-primary text-white px-8 py-4 rounded-2xl text-xl font-bold shadow-xl shadow-primary/20">
+            <Link href="#about-us" onClick={() => setIsOpen(false)} className="text-4xl font-bold text-muted hover:text-foreground transition-colors">About Us</Link>
+            <Link href="#the-architecture" onClick={() => setIsOpen(false)} className="text-4xl font-bold text-muted hover:text-foreground transition-colors">The Architecture</Link>
+            <Link href="#our-agents" onClick={() => setIsOpen(false)} className="text-4xl font-bold text-muted hover:text-foreground transition-colors">Our Agents</Link>
+            <a 
+              href="https://calendly.com/brineaiconsulting/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 bg-primary text-white px-8 py-4 rounded-2xl text-xl font-bold shadow-xl shadow-primary/20"
+            >
               Book a call
-            </button>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

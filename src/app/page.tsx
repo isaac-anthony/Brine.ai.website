@@ -31,21 +31,21 @@ export default function Home() {
               />
             </div>
             <div className="text-3xl font-bold tracking-tighter text-foreground">
-              Brine<span className="text-primary">.ai</span>
+              Brine Ai <span className="text-primary">Consulting</span>
             </div>
             <div className="text-xs text-muted font-medium mt-1">Custom Autonomous Agents — Engineered by Brine Consulting</div>
           </div>
           
           <nav className="flex flex-wrap justify-center gap-8 text-sm text-[#1d1d1f]/40 font-medium mb-12">
-            <a href="#services" className="hover:text-primary transition-colors">Services</a>
-            <a href="/pricing" className="hover:text-primary transition-colors">Pricing</a>
-            <a href="#architecture" className="hover:text-primary transition-colors">Architecture</a>
+            <a href="#services" className="hover:text-primary transition-colors">About Us</a>
+            <a href="#architecture" className="hover:text-primary transition-colors">The Architecture</a>
+            <a href="#pricing" className="hover:text-primary transition-colors">Our Agents</a>
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
           </nav>
           
           <div className="text-[#1d1d1f]/20 text-xs font-medium tracking-[0.2em] uppercase">
-            © 2026 Brine.ai — Custom Sales Infrastructure, Implemented by Brine Consulting.
+            © 2026 Brine.ai — Custom AI Agent Workflows, Implemented by Brine Consulting.
           </div>
         </FadeIn>
       </footer>

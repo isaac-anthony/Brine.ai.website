@@ -13,22 +13,42 @@ import { FadeIn, FadeInStagger } from "./FadeIn";
 const layers = [
   {
     id: "directives",
-    title: "Directives",
-    subtitle: "Custom-Tuned Executive Intelligence",
-    description: "We don't use generic prompts. We codify your tribal knowledge into high-fidelity AI SOPs that ensure every agent interaction—from sales to complex operations—reflects your brand's specific logic and ethics.",
-    note: "Beyond simple chat. We build the digital SOPs that ensure your AI handles any business process with the precision of your top executive.",
+    title: "The Brain: Your Business Rules",
+    subtitle: "Custom-Tuned Digital SOPs",
+    description: (
+      <>
+        We don't use generic prompts. We <span className="font-bold text-foreground">codify your tribal knowledge</span> into <span className="font-bold text-foreground">high-fidelity AI SOPs</span> that ensure every agent interaction—from sales to complex operations—reflects your brand's <span className="font-bold text-foreground">specific logic and ethics</span>.
+      </>
+    ),
+    note: (
+      <>
+        Beyond simple chat. <span className="font-bold text-foreground">The system is self-annealing</span>—it proactively identifies logic "bugs" and attempts to fix them autonomously so your workflow never hits a dead end.
+      </>
+    ),
     features: [
       { 
         label: "Tone-Matched Logic", 
-        text: "We codify your brand's specific 'voice' so every AI interaction feels like a human member of your team." 
+        text: (
+          <>
+            We codify your brand's <span className="font-bold text-foreground">specific 'voice'</span> so every AI interaction feels like a <span className="font-bold text-foreground">human member</span> of your team.
+          </>
+        )
       },
       { 
         label: "Dynamic Decision Trees", 
-        text: "Sophisticated 'if/then' frameworks that handle complex sales objections and customer inquiries with 100% accuracy." 
+        text: (
+          <>
+            Sophisticated <span className="font-bold text-foreground">'if/then' frameworks</span> that handle complex sales objections and customer inquiries with <span className="font-bold text-foreground text-primary">100% accuracy</span>.
+          </>
+        )
       },
       { 
         label: "Institutional Memory", 
-        text: "Your agents are trained on your specific case studies, whitepapers, and pricing sheets to act as a 24/7 subject matter expert." 
+        text: (
+          <>
+            Your agents are trained on your <span className="font-bold text-foreground">specific case studies</span>, whitepapers, and pricing sheets to act as a <span className="font-bold text-foreground text-primary">24/7 subject matter expert</span>.
+          </>
+        )
       }
     ],
     footer: "Your business logic, immortalized in code.",
@@ -40,20 +60,40 @@ const layers = [
     id: "orchestration",
     title: "Orchestration",
     subtitle: "Universal Process Orchestration",
-    description: "Experience a deterministic engine that executes any business workflow. Our orchestration layer handles the 'invisible labor'—from deep data extraction to recursive problem-solving across your entire stack.",
-    note: "Universal execution. While others focus on one task, our engine orchestrates complex multi-step workflows across your business 24/7.",
+    description: (
+      <>
+        Experience a <span className="font-bold text-foreground">deterministic engine</span> that executes any business workflow. Our orchestration layer handles the <span className="font-bold text-foreground text-primary">'invisible labor'</span>—from <span className="font-bold text-foreground">deep data extraction</span> to recursive problem-solving across your entire stack.
+      </>
+    ),
+    note: (
+      <>
+        <span className="font-bold text-foreground text-primary">Universal execution</span>. While others focus on one task, our engine orchestrates <span className="font-bold text-foreground">complex multi-step workflows</span> across your business <span className="font-bold text-foreground">24/7</span>.
+      </>
+    ),
     features: [
       { 
         label: "Multi-Source Data Hunt", 
-        text: "Our engine hunts for leads across Google Maps, LinkedIn, and niche directories simultaneously based on your exact criteria." 
+        text: (
+          <>
+            Our engine hunts for leads across <span className="font-bold text-foreground">Google Maps, LinkedIn, and niche directories</span> simultaneously based on your <span className="font-bold text-foreground text-primary">exact criteria</span>.
+          </>
+        )
       },
       { 
-        label: "Recursive Logic Engines", 
-        text: "Not just a scraper—a thinker. The system evaluates website data to find the 'Breaking Point' signals where your help is needed most." 
+        label: "Self-Correction Engine", 
+        text: (
+          <>
+            Not just a scraper—a <span className="font-bold text-foreground">thinker</span>. The system evaluates website data and <span className="font-bold text-foreground">automatically corrects its strategy</span> if it hits a roadblock, ensuring progress without endless loops.
+          </>
+        )
       },
       { 
         label: "Self-Healing Workflows", 
-        text: "If a lead data point is missing, the engine automatically pivots to a secondary verification source to ensure zero data gaps." 
+        text: (
+          <>
+            If a lead data point is missing, the engine <span className="font-bold text-foreground">automatically pivots</span> to a secondary verification source to ensure <span className="font-bold text-foreground text-primary">zero data gaps</span>.
+          </>
+        )
       }
     ],
     footer: "Automating 100+ hours of custom business logic monthly.",
@@ -65,20 +105,40 @@ const layers = [
     id: "clients",
     title: "Clients",
     subtitle: "Seamless Enterprise Connectivity",
-    description: "Zero friction, total adoption. Our agents are 'Ghost Team Members' that live inside any API-enabled tool, updating your CRM, alerting your phone, or triggering your specific software actions automatically.",
-    note: "Universal Connectivity. Brine.ai works within any of your current tools to turn custom automation into an invisible team member. Note: We provide full white-glove integration with your existing SmartSuite or Salesforce environment.",
+    description: (
+      <>
+        <span className="font-bold text-foreground text-primary">Zero friction, total adoption</span>. Our agents are <span className="font-bold text-foreground">'Ghost Team Members'</span> that live inside any API-enabled tool, <span className="font-bold text-foreground">updating your CRM</span>, alerting your phone, or triggering your <span className="font-bold text-foreground">specific software actions</span> automatically.
+      </>
+    ),
+    note: (
+      <>
+        <span className="font-bold text-foreground text-primary">Universal Connectivity</span>. Brine.ai works within any of your current tools to turn custom automation into an <span className="font-bold text-foreground">invisible team member</span>. Note: We provide <span className="font-bold text-foreground">full white-glove integration</span> with your existing SmartSuite or Salesforce environment.
+      </>
+    ),
     features: [
       { 
         label: "Any-Stack Integration", 
-        text: "We connect your agents directly to Slack, Gmail, and SmartSuite so results appear exactly where your team already works." 
+        text: (
+          <>
+            We connect your agents <span className="font-bold text-foreground text-primary">directly to Slack, Gmail, and SmartSuite</span> so results appear <span className="font-bold text-foreground">exactly where your team already works</span>.
+          </>
+        )
       },
       { 
         label: "The Business Intel Hub", 
-        text: "Turn your sales data into a chat-ready hub where you can ask, 'What’s our pipeline value this week?' and get an instant answer." 
+        text: (
+          <>
+            Turn your sales data into a <span className="font-bold text-foreground">chat-ready hub</span> where you can ask, <span className="font-bold text-foreground text-primary">'What’s our pipeline value this week?'</span> and get an <span className="font-bold text-foreground">instant answer</span>.
+          </>
+        )
       },
       { 
         label: "Automated Action Triggers", 
-        text: "From booking a Calendly demo to updating a CRM status, every 'Front-of-House' task is handled autonomously." 
+        text: (
+          <>
+            From <span className="font-bold text-foreground text-primary">booking a Calendly demo</span> to updating a CRM status, every 'Front-of-House' task is handled <span className="font-bold text-foreground">autonomously</span>.
+          </>
+        )
       }
     ],
     footer: "High-impact custom work, happening in the background.",
@@ -92,7 +152,7 @@ export const Architecture = () => {
   const [activeLayer, setActiveLayer] = useState<string | null>(layers[0].id);
 
   return (
-    <section id="architecture" className="py-40 px-6 relative overflow-hidden bg-[#fbfbfd] scroll-mt-20">
+    <section id="the-architecture" className="py-40 px-6 relative bg-[#fbfbfd] scroll-mt-20">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(0,113,227,0.03),transparent)] pointer-events-none" />
               <div className="max-w-7xl mx-auto">
                 <FadeIn className="mb-20">
@@ -160,17 +220,17 @@ export const Architecture = () => {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                       >
-                        <p className="mt-8 text-muted leading-relaxed text-lg italic border-l-2 border-primary/20 pl-6">
+                        <div className="mt-8 text-muted leading-relaxed text-lg italic border-l-2 border-primary/20 pl-6">
                           {layer.description}
-                        </p>
+                        </div>
                         
                         <div className="mt-8 flex flex-col gap-4">
                           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 text-[10px] font-bold text-primary uppercase tracking-widest w-fit">
                             Consultant Note
                           </div>
-                          <p className="text-foreground font-semibold leading-relaxed">
+                          <div className="text-foreground font-semibold leading-relaxed">
                             {layer.note}
-                          </p>
+                          </div>
                         </div>
 
                         <motion.div 
@@ -240,7 +300,7 @@ export const Architecture = () => {
                                   <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
                                   <div className="flex flex-col gap-1">
                                      <span className="text-foreground font-bold text-lg">{feature.label}</span>
-                                     <span className="text-muted text-sm leading-relaxed">{feature.text}</span>
+                                     <div className="text-muted text-sm leading-relaxed">{feature.text}</div>
                                   </div>
                                </motion.div>
                              ))}

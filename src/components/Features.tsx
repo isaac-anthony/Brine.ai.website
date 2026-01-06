@@ -149,7 +149,7 @@ export const Stats = () => {
       suffix: "Hours Saved Monthly",
       subtext: (
         <>
-          <span className="font-bold text-foreground/90">Autonomous orchestration</span> of manual research, scoring, and <span className="font-bold text-foreground/90">follow-up tasks.</span>
+          <span className="font-bold text-foreground/90">Rapid implementation</span> of custom workflows that automate manual research, scoring, and <span className="font-bold text-foreground/90">follow-up tasks.</span>
         </>
       ),
       icon: LucideZap 
@@ -179,7 +179,7 @@ export const Stats = () => {
   ];
 
   return (
-    <div id="stats" className="relative z-30 px-6 -mt-64 mb-40">
+    <div id="stats" className="relative z-30 px-6 mt-8 mb-40">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {stats.map((stat, i) => (
           <FadeIn 

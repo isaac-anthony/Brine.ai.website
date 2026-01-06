@@ -122,7 +122,7 @@ export const Services = () => {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -150]);
 
   return (
-    <section ref={containerRef} id="services" className="py-40 px-6 max-w-7xl mx-auto relative overflow-hidden scroll-mt-20">
+    <section ref={containerRef} id="about-us" className="py-40 px-6 max-w-7xl mx-auto relative scroll-mt-20">
       {/* Parallax Background Glows */}
       <motion.div 
         style={{ y: y1 }}
@@ -135,10 +135,10 @@ export const Services = () => {
 
       <FadeIn className="text-center mb-24">
         <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground tracking-tighter">
-          Strategic Implementation, <span className="text-primary">Powered by Brine Consulting.</span>
+          Custom Implementation, <span className="text-primary">Engineered for Velocity.</span>
         </h2>
         <p className="text-muted text-lg max-w-2xl mx-auto">
-          We don't just provide tools; we design and implement custom-built agents that integrate into your specific business architecture to secure your next 250+ leads monthly.
+          We save <span className="font-bold text-foreground">hundreds of hours</span> of manual labor by implementing <span className="font-bold text-foreground">custom autonomous workflows</span> in weeks, not months. We don't just provide tools; we build the <span className="font-bold text-foreground text-primary">infrastructure that scales your output</span> without increasing your payroll.
         </p>
       </FadeIn>
 
@@ -150,10 +150,10 @@ export const Services = () => {
             <div className="absolute top-0 right-0 p-8 text-primary/5 group-hover:text-primary/10 transition-colors">
                 <LucideSearch size={120} />
             </div>
-            <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Custom Lead Discovery</h3>
-                <p className="text-muted text-sm max-w-xs">We build custom-tuned engines that identify 250+ qualified businesses monthly based on your exact ideal customer profile, delivered automatically to your chosen stack.</p>
-            </div>
+                    <div className="relative z-10">
+                        <h3 className="text-2xl font-bold mb-4 text-foreground">Custom Lead Discovery</h3>
+                        <p className="text-muted text-sm max-w-xs">We build <span className="font-bold text-foreground">custom-tuned engines</span> that identify <span className="font-bold text-foreground text-primary">250+ qualified businesses</span> monthly based on your <span className="font-bold text-foreground">exact ideal customer profile</span>, delivered automatically to your chosen stack.</p>
+                    </div>
             <div className="mt-8 bg-black/[0.01] p-6 rounded-2xl border border-black/5 h-40">
                 <LeadDiscoveryCard />
             </div>
@@ -161,23 +161,23 @@ export const Services = () => {
         </FadeIn>
 
         <FadeIn direction="up" className="md:col-span-1 md:row-span-1">
-          <div className="glass p-8 rounded-[2rem] flex flex-col items-center justify-center text-center shadow-sm hover:shadow-xl transition-all bg-white h-full min-h-[350px] border-black/5 backdrop-blur-2xl">
-            <h3 className="text-xl font-bold text-foreground mb-4">Zero-Waste Lead Filtering</h3>
-            <p className="text-muted text-xs mb-6 leading-relaxed">Our AI analyzes prospect websites to ensure a perfect fit. You only spend time on qualified leads.</p>
-            <LeadScoreWidget />
-          </div>
+                <div className="glass p-8 rounded-[2rem] flex flex-col items-center justify-center text-center shadow-sm hover:shadow-xl transition-all bg-white h-full min-h-[350px] border-black/5 backdrop-blur-2xl">
+                    <h3 className="text-xl font-bold text-foreground mb-4">Zero-Waste Lead Filtering</h3>
+                    <p className="text-muted text-xs mb-6 leading-relaxed">We <span className="font-bold text-foreground">tailor leads</span> to your standards. You <span className="font-bold text-foreground text-primary">only spend time</span> on qualified leads.</p>
+                    <LeadScoreWidget />
+                </div>
         </FadeIn>
 
         <FadeIn direction="up" className="md:col-span-1 md:row-span-2">
           <div className="glass p-8 rounded-[2rem] flex flex-col justify-between group relative overflow-hidden shadow-sm hover:shadow-xl transition-all bg-white h-full min-h-[400px] border-black/5 backdrop-blur-2xl">
             <div className="absolute inset-0 blue-glow opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="relative z-10 h-full flex flex-col justify-between">
-                <div>
-                  <LucideZap className="text-primary mb-6" size={32} />
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">Total Stack Integration</h3>
-                  <p className="text-muted text-sm leading-relaxed">We implement universal connectivity across your stack. Brine.ai integrates with any of your existing tools—as long as they have an API or application—to act as your central intelligence hub.</p>
-                </div>
-                
+                        <div>
+                          <LucideZap className="text-primary mb-6" size={32} />
+                          <h3 className="text-2xl font-bold mb-4 text-foreground">Total Stack Integration</h3>
+                          <p className="text-muted text-sm leading-relaxed">We implement <span className="font-bold text-foreground">universal connectivity</span> across your stack. Brine.ai integrates with <span className="font-bold text-foreground">any of your existing tools</span>—as long as they have an API or application—to act as your <span className="font-bold text-foreground text-primary">central intelligence hub</span>.</p>
+                        </div>
+
                 {/* Integration Icons Grid */}
                 <div className="grid grid-cols-3 gap-y-6 gap-x-4 mt-8">
                    {[
@@ -228,11 +228,11 @@ export const Services = () => {
         </FadeIn>
 
         <FadeIn direction="up" className="md:col-span-3 md:row-span-1">
-          <div className="glass p-8 rounded-[2rem] flex flex-col md:flex-row items-start md:items-center justify-between group relative overflow-hidden shadow-sm hover:shadow-xl transition-all bg-white h-full min-h-[250px] border-black/5 backdrop-blur-2xl">
-            <div className="max-w-2xl">
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Custom Outreach Orchestration—Customized to Your Voice.</h3>
-                <p className="text-muted text-sm leading-relaxed">Brine Consulting designs and handles the entire implementation of your front-of-house agents. We build the logic for personalized hooks, prospect question handling, and direct calendar booking. You only see the wins.</p>
-            </div>
+                <div className="glass p-8 rounded-[2rem] flex flex-col md:flex-row items-start md:items-center justify-between group relative overflow-hidden shadow-sm hover:shadow-xl transition-all bg-white h-full min-h-[250px] border-black/5 backdrop-blur-2xl">
+                    <div className="max-w-2xl">
+                        <h3 className="text-2xl font-bold mb-4 text-foreground">Custom Outreach Orchestration—Customized to Your Voice.</h3>
+                        <p className="text-muted text-sm leading-relaxed">Brine Consulting designs and handles the <span className="font-bold text-foreground text-primary">entire implementation</span> of your front-of-house agents. We build the logic for <span className="font-bold text-foreground">personalized hooks</span>, prospect question handling, and <span className="font-bold text-foreground">direct calendar booking</span>. You only see the wins.</p>
+                    </div>
             <div className="flex gap-4 mt-6 md:mt-0">
                 <div className="w-16 h-16 rounded-2xl bg-black/5 border border-black/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shadow-lg">
                   <LucideMousePointer2 size={32} />
@@ -255,12 +255,15 @@ export const Services = () => {
           <div className="relative z-10 flex flex-col md:flex-row items-center gap-12 text-white">
              <div className="flex-1 text-center md:text-left">
                 <div className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-[10px] font-bold uppercase tracking-widest mb-8 border border-white/10 shadow-lg">Pilot Offer Active</div>
-                <h3 className="text-4xl font-bold text-white mb-6 tracking-tight">The Brine Consulting Strategy</h3>
-                <p className="text-white/60 text-lg leading-relaxed italic mb-0">
-                  "We don't just install software; we build your unfair advantage. Brine Consulting identifies your sales bottlenecks and maps them to autonomous agents that scale your outreach without increasing your payroll."
-                </p>
+                        <h3 className="text-4xl font-bold text-white mb-6 tracking-tight">Rapid Workflow Implementation</h3>
+                        <p className="text-white/60 text-lg leading-relaxed italic mb-0">
+                          "We don't just install software; we <span className="font-bold text-white">engineer your time back</span>. Brine Ai Consulting implements <span className="font-bold text-white">custom autonomous workflows</span> that save <span className="font-bold text-primary">hundreds of hours monthly</span>, allowing you to scale without the 'human bottleneck' or overhead."
+                        </p>
              </div>
-             <motion.button 
+             <motion.a 
+               href="https://calendly.com/brineaiconsulting/30min"
+               target="_blank"
+               rel="noopener noreferrer"
                whileHover={{ scale: 1.05, boxShadow: "0px 0px 40px rgba(124, 58, 237, 0.8)" }}
                animate={{ 
                  scale: [1, 1.03, 1],
@@ -275,10 +278,11 @@ export const Services = () => {
                  repeat: Infinity,
                  ease: "easeInOut"
                }}
-               className="bg-white text-[#0f172a] px-12 py-6 rounded-2xl font-bold text-xl whitespace-nowrap border-2 border-primary/20 relative overflow-hidden"
+               className="bg-white text-[#0f172a] px-12 py-6 rounded-2xl font-bold text-xl whitespace-nowrap border-2 border-primary/20 relative overflow-hidden flex items-center justify-center"
              >
-                Claim Your Pilot →
-             </motion.button>
+                <span className="relative z-10">Claim Your Pilot →</span>
+                <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+             </motion.a>
           </div>
         </div>
       </FadeIn>

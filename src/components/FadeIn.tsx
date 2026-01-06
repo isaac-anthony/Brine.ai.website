@@ -6,12 +6,14 @@ import { ReactNode } from "react";
         export const FadeIn = ({ 
           children, 
           delay = 0, 
+          duration = 0.4,
           direction = "up", 
           fullWidth = false,
           className 
         }: { 
           children: ReactNode; 
           delay?: number; 
+          duration?: number;
           direction?: "up" | "down" | "left" | "right" | "none";
           fullWidth?: boolean;
           className?: string;
@@ -38,7 +40,7 @@ import { ReactNode } from "react";
                   x: 0, 
                   y: 0,
                   transition: {
-                    duration: 0.4,
+                    duration: duration,
                     delay: delay,
                     ease: [0.215, 0.61, 0.355, 1],
                   }

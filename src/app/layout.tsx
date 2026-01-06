@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { SmoothScroll } from "@/components/SmoothScroll";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans antialiased bg-[#fbfbfd] min-h-screen relative text-[#1d1d1f]`}>
+        <SmoothScroll />
         {/* Grain Overlay */}
         <div className="fixed inset-0 grain z-50" />
         {children}
