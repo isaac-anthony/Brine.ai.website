@@ -2,8 +2,7 @@
 
 import { motion } from "framer-motion";
 import { 
-  ArrowRight as LucideArrowRight, 
-  Play as LucidePlay 
+  ArrowRight as LucideArrowRight
 } from "lucide-react";
 import { FadeIn, FadeInStagger } from "./FadeIn";
 
@@ -54,15 +53,8 @@ export const Hero = () => {
                       <span className="relative">Start Automating</span>
                       <LucideArrowRight className="w-5 h-5 relative group-hover:translate-x-1 transition-transform" />
                     </motion.a>
-
-            <button className="flex items-center gap-3 text-muted hover:text-foreground transition-colors font-semibold group">
-              <div className="w-12 h-12 glass rounded-full flex items-center justify-center group-hover:bg-black/5 transition-colors">
-                <LucidePlay className="w-5 h-5 fill-foreground text-foreground" />
-              </div>
-              Watch Demo
-            </button>
-          </div>
-        </FadeIn>
+                  </div>
+                </FadeIn>
       </FadeInStagger>
     </section>
   );
