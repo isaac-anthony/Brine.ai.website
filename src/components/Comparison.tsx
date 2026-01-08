@@ -44,7 +44,7 @@ export const sdrComparison = [
     manual: "Manual Follow-up: Leads die in the inbox because you're too busy to reply.",
     ai: (
       <>
-        The Full-Cycle Agent: Our agents handle the <span className="font-bold text-foreground text-primary">entire "Front-of-House"</span>—answering questions, sending demos, and <span className="font-bold text-foreground">booking calls</span>.
+        The Full-Cycle Agent: Our agents handle the <span className="font-bold text-foreground text-primary">entire "Front-of-House"</span>—answering questions, sending demos, and <span className="font-bold text-foreground">booking consultations</span>.
       </>
     ),
     manualIcon: LucideMinus,
@@ -163,7 +163,7 @@ export const Comparison = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
+                transition={{ duration: 0.2, ease: "easeInOut" }}
                 className="flex flex-col"
               >
                 {currentComparison.map((row, i) => (

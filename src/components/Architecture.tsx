@@ -112,7 +112,7 @@ const layers = [
     ),
     note: (
       <>
-        <span className="font-bold text-foreground text-primary">Universal Connectivity</span>. Brine.ai works within any of your current tools to turn custom automation into an <span className="font-bold text-foreground">invisible team member</span>. Note: We provide <span className="font-bold text-foreground">full white-glove integration</span> with your existing SmartSuite or Salesforce environment.
+        <span className="font-bold text-foreground text-primary">Universal Connectivity</span>. Brine.ai works within any of your current tools to turn custom automation into an <span className="font-bold text-foreground">invisible team member</span>. Note: We provide <span className="font-bold text-foreground">full white-glove integration</span> with your existing Airtable or Salesforce environment.
       </>
     ),
     features: [
@@ -120,7 +120,7 @@ const layers = [
         label: "Any-Stack Integration", 
         text: (
           <>
-            We connect your agents <span className="font-bold text-foreground text-primary">directly to Slack, Gmail, and SmartSuite</span> so results appear <span className="font-bold text-foreground">exactly where your team already works</span>.
+            We connect your agents <span className="font-bold text-foreground text-primary">directly to Slack, Gmail, and Airtable</span> so results appear <span className="font-bold text-foreground">exactly where your team already works</span>.
           </>
         )
       },
@@ -165,7 +165,7 @@ export const Architecture = () => {
                 </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          <FadeInStagger className="space-y-4" staggerChildren={0.03}>
+          <FadeInStagger className="space-y-4" staggerChildren={0.02}>
             {layers.map((layer) => (
               <FadeIn direction="right" key={layer.id}>
                 <motion.button
@@ -217,7 +217,7 @@ export const Architecture = () => {
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ duration: 0.2 }}
                         className="overflow-hidden"
                       >
                         <div className="mt-8 text-muted leading-relaxed text-lg italic border-l-2 border-primary/20 pl-6">

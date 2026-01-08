@@ -192,11 +192,11 @@ const PricingCard = ({ solution, isExpanded, onToggle }: {
   onToggle: () => void 
 }) => {
   return (
-    <FadeIn key={solution.name} direction="up" className="h-full" duration={0.3}>
+    <FadeIn key={solution.name} direction="up" className="h-full" duration={0.2}>
       <motion.div 
         layout
         onClick={onToggle}
-        transition={{ duration: 0.4, ease: [0.215, 0.61, 0.355, 1] }}
+        transition={{ duration: 0.2, ease: [0.215, 0.61, 0.355, 1] }}
         className={`relative h-full glass p-8 md:p-10 rounded-[3rem] flex flex-col group transition-all duration-500 bg-white border-black/5 cursor-pointer ${
           isExpanded 
           ? "ring-2 ring-primary/20 shadow-2xl shadow-primary/10" 
@@ -258,7 +258,7 @@ const PricingCard = ({ solution, isExpanded, onToggle }: {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               className="overflow-hidden"
             >
               <div className="space-y-8 mb-12">
@@ -327,7 +327,7 @@ export const Pricing = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,rgba(0,113,227,0.03),transparent)] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto">
-        <FadeIn className="text-center mb-24" duration={0.3}>
+        <FadeIn className="text-center mb-24" duration={0.2}>
           <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-6 tracking-tighter">
             Strategic <span className="text-primary">Implementation Tiers.</span>
           </h2>
@@ -336,7 +336,7 @@ export const Pricing = () => {
           </p>
         </FadeIn>
 
-        <FadeInStagger className="space-y-12" staggerChildren={0.03}>
+        <FadeInStagger className="space-y-12" staggerChildren={0.02}>
           {/* Category Headers Row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-4 hidden md:grid">
             <div className="col-span-2 flex items-center gap-4">

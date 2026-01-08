@@ -193,7 +193,7 @@ export const Services = () => {
                         initial={{ opacity: 0.3, filter: "grayscale(1) opacity(0.5)" }}
                         whileInView={{ opacity: 1, filter: "grayscale(0) opacity(1)" }}
                         viewport={{ once: false, amount: 0.5 }}
-                        transition={{ delay: (i % 3) * 0.1, duration: 0.5 }}
+                        transition={{ delay: (i % 3) * 0.05, duration: 0.2 }}
                         className="flex flex-col items-center gap-2"
                       >
                          <div className="w-12 h-12 rounded-xl bg-white border border-black/5 flex items-center justify-center p-2.5 shadow-sm overflow-hidden group-hover:scale-110 transition-transform duration-500">

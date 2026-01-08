@@ -17,16 +17,16 @@ export const Header = () => {
       <motion.header
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: [0.2, 0, 0, 1] }}
+        transition={{ duration: 0.2, ease: [0.2, 0, 0, 1] }}
         className="fixed top-0 left-0 right-0 z-[100] p-6 flex justify-center"
       >
         <nav className="glass px-6 py-3 rounded-2xl flex items-center justify-between w-full max-w-7xl backdrop-blur-md border-b border-slate-200/10 shadow-sm">
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center">
               <img 
-                src="/Brine.ai_Logo.png" 
-                alt="Brine.ai Logo" 
-                className="w-full h-full object-cover scale-110"
+                src="/BC_Logo_new.png" 
+                alt="Brine Ai Consulting Logo" 
+                className="w-full h-full object-contain"
               />
             </div>
             <span className="text-xl font-bold tracking-tighter text-foreground">
@@ -53,7 +53,7 @@ export const Header = () => {
               className="relative group hidden md:flex items-center gap-2 bg-primary px-5 py-2 rounded-xl text-sm font-semibold text-white shadow-sm overflow-hidden transition-all"
             >
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-              <span className="relative">Book a call</span>
+              <span className="relative">Book a consultation</span>
               <LucideArrowUpRight className="w-4 h-4 relative group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </motion.a>
             
@@ -84,7 +84,7 @@ export const Header = () => {
               rel="noopener noreferrer"
               className="mt-8 bg-primary text-white px-8 py-4 rounded-2xl text-xl font-bold shadow-xl shadow-primary/20"
             >
-              Book a call
+              Book a consultation
             </a>
           </motion.div>
         )}

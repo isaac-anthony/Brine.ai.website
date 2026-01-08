@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans antialiased bg-[#fbfbfd] min-h-screen relative text-[#1d1d1f]`}>
         <SmoothScroll />
         {/* Grain Overlay */}
-        <div className="fixed inset-0 grain z-50" />
+        <div className="fixed inset-0 grain z-50 pointer-events-none" />
         {children}
       </body>
     </html>

@@ -6,7 +6,7 @@ import { ReactNode } from "react";
         export const FadeIn = ({ 
           children, 
           delay = 0, 
-          duration = 0.4,
+          duration = 0.2,
           direction = "up", 
           fullWidth = false,
           className 
@@ -58,7 +58,7 @@ import { ReactNode } from "react";
 
 export const FadeInStagger = ({ 
   children, 
-  staggerChildren = 0.05, 
+  staggerChildren = 0.02, 
   delayChildren = 0,
   className 
 }: { 

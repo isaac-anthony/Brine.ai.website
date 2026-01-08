@@ -17,7 +17,7 @@ export const SmoothScroll = () => {
           const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
           const startPosition = window.pageYOffset;
           const distance = targetPosition - startPosition;
-          const duration = 800;
+          const duration = 500;
           let start: number | null = null;
 
           const animation = (currentTime: number) => {
@@ -49,4 +49,5 @@ export const SmoothScroll = () => {
 
   return null;
 };
+
 
